@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Leite",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 52.22
+    },
+    {
+      "id": 2,
+      "name": "Couve",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 52.22
+    },
+    {
+      "id": 3,
+      "name": "Banana",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 52.22
+    },
+    {
+      "id": 4,
+      "name": "Uva",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 2.22
+    },
+    {
+      "id": 5,
+      "name": "Limão",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 42.22
+    },
+    {
+      "id": 6,
+      "name": "Goiaba",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 122.22
+    },
+    {
+      "id": 7,
+      "name": "Coco",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 562.22
+    },
+    {
+      "id": 8,
+      "name": "Pepino",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 562.22
+    },
+    {
+      "id": 9,
+      "name": "Alho",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 562.22
+    },
+    {
+      "id": 10,
+      "name": "Morango",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 562.22
+    },
+    {
+      "id": 11,
+      "name": "Coca-Cola",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 562.22
+    },
+    {
+      "id": 12,
+      "name": "Laranja",
+      "manufacture": "2021-01-05",
+      "expirationDate": "2021-01-06",
+      "perishable": true,
+      "price": "22.50"      
+    }
+  ]
+}

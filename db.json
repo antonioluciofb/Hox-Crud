@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "name": "Arroz",
+      "manufacture": "12/02/2021",
+      "expirationDate": "N/A",
+      "perishable": false,
+      "price": "22",
+      "id": 2
+    },
+    {
+      "name": "morango",
+      "manufacture": "05/02/2021",
+      "expirationDate": "12/02/2021",
+      "perishable": true,
+      "price": "5",
+      "id": 3
+    }
+  ]
+}
