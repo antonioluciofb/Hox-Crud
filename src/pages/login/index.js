@@ -6,7 +6,7 @@ import loginToken from "../../store/actions/loginTokenAction";
 
 import Api from "../../API/api";
 
-import Logo from "./logo.png";
+// import Logo from "./logo.png";
 
 import { Container, BoxLogin, InputData, SignInButton } from "./style";
 
@@ -18,7 +18,8 @@ function Login({ loginToken }) {
 
   return (
     <Container>
-      <img src={Logo} alt="" />
+      {/* <img src={Logo} alt="" /> */}
+      <h1>CRUD</h1>
       <BoxLogin>
         <div className="credentials">
           <InputData

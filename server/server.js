@@ -8,7 +8,7 @@ const jwt = require("jsonwebtoken");
 server.use(middlewares);
 
 server.get("/login", (req, res, next) => {
-  if (req.query.user === "hox" && req.query.password === "hox.rs") {
+  if (req.query.user === "antonio" && req.query.password === "123123") {
     const id = 1;
     const token = jwt.sign({ id }, process.env.SECRET, {
       expiresIn: 32400, // 9Hours
@@ -20,6 +20,6 @@ server.get("/login", (req, res, next) => {
 
 // Use default router
 server.use(router);
-server.listen(3000, () => {
+server.listen(3333, () => {
   console.log("JSON Server is running");
 });

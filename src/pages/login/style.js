@@ -17,6 +17,14 @@ const Container = styled.div`
     margin-top: -10px;
     margin-bottom: 10px;
   }
+
+  h1{
+    margin: 0px;
+    font-size: 120px;
+    color: white;
+    font-family: "Bebas Neue", cursive;
+    letter-spacing: 3px;
+  }
 `;
 const BoxLogin = styled.div`
   width: 30%;

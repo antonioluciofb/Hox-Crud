@@ -1,20 +1,140 @@
 {
   "products": [
     {
-      "name": "Arroz",
-      "manufacture": "12/02/2021",
-      "expirationDate": "N/A",
-      "perishable": false,
-      "price": "22",
-      "id": 2
+      "id": 1,
+      "name": "Leite",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 52.22
     },
     {
-      "name": "morango",
-      "manufacture": "05/02/2021",
-      "expirationDate": "12/02/2021",
+      "id": 2,
+      "name": "Couve",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
       "perishable": true,
-      "price": "5",
-      "id": 3
+      "price": 52.22
+    },
+    {
+      "id": 3,
+      "name": "Banana",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 52.22
+    },
+    {
+      "id": 4,
+      "name": "Uva",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 2.22
+    },
+    {
+      "id": 5,
+      "name": "Limão",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 42.22
+    },
+    {
+      "id": 6,
+      "name": "Goiaba",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 122.22
+    },
+    {
+      "id": 7,
+      "name": "Coco",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 562.22
+    },
+    {
+      "id": 11,
+      "name": "Coca-Cola",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 562.22
+    },
+    {
+      "id": 12,
+      "name": "Laranja",
+      "manufacture": "2021-01-05",
+      "expirationDate": "2021-01-06",
+      "perishable": true,
+      "price": "22.50"
+    },
+    {
+      "id": 13,
+      "name": "Leite",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 52.22
+    },
+    {
+      "id": 32,
+      "name": "Couve",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 52.22
+    },
+    {
+      "id": 43,
+      "name": "Banana",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 52.22
+    },
+    {
+      "id": 54,
+      "name": "Uva",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 2.22
+    },
+    {
+      "id": 15,
+      "name": "Limão",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 42.22
+    },
+    {
+      "id": 326,
+      "name": "Goiaba",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 122.22
+    },
+    {
+      "id": 3217,
+      "name": "Coco",
+      "manufacture": "22/01/2022",
+      "expirationDate": "22/01/2022",
+      "perishable": true,
+      "price": 562.22
+    },
+    {
+      "name": "Maca",
+      "manufacture": "27/02/2021",
+      "expirationDate": "N/A",
+      "perishable": false,
+      "price": "12",
+      "id": 3218
     }
   ]
 }

@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
-import { connect as Connect } from "react-redux";
-import updateState from "../../../../../store/actions/updateAction";
-import pagination from "../../../../../store/actions/paginationAction";
+import { connect as Connect } from "react-redux"
+import updateState from "../../../../../store/actions/updateAction"
+import pagination from "../../../../../store/actions/paginationAction"
 
-import { ButtonCheck, Container, InputModal, Button } from "./style";
+import { ButtonCheck, Container, InputModal, Button } from "./style"
 
-import api from "../../../../../API/api";
+import api from "../../../../../API/api"
 
-import { validator } from "../utils";
+import { validator } from "../utils"
 
 function ModalExclude({
   title,
@@ -18,51 +18,56 @@ function ModalExclude({
   pagination,
 }) {
   // eslint-disable-next-line
-  const [products, setProducts] = useState(reduxProducts.selectedProducts);
+  const [products, setProducts] = useState(reduxProducts.selectedProducts)
   // eslint-disable-next-line
-  const [checked, setChecked] = useState(validator(products));
+  const [checked, setChecked] = useState(validator(products))
 
   async function deleteProduct(props) {
     if (props.all) {
-      var allProducts = await reduxProducts.products;
-      var allID = products.map((item) => item.id);
-      await api.delete(`/products/${String(allID)}`);
+      var allProducts = await reduxProducts.products
+      var allID = products.map((item) => item.id)
+      await api.delete(`/products/${String(allID)}`)
       setTimeout(() => {
-        close();
-        updateState("clear");
-      }, 600);
+        close()
+        updateState("clear")
+      }, 600)
       if (allProducts.length === products.length) {
         if (reduxProducts.page === 1) {
           setTimeout(() => {
-            close();
-            updateState("clear");
-          }, 300);
-          return null;
+            close()
+            updateState("clear")
+          }, 300)
+          return null
         } else {
-          pagination(reduxProducts.page - 1);
+          pagination(reduxProducts.page - 1)
           setTimeout(() => {
-            close();
-            updateState("clear");
-          }, 300);
+            close()
+            updateState("clear")
+          }, 300)
         }
       }
     } else {
-      const allProducts = await reduxProducts.products;
-      await api.delete(`/products/${products[0].id}`);
+      const allProducts = await reduxProducts.products
+      await api.delete(`/products/${products[0].id}`)
       if (allProducts.length === products.length) {
         if (reduxProducts.page === 1) {
           setTimeout(() => {
-            close();
-            updateState("clear");
-          }, 300);
-          return null;
+            close()
+            updateState("clear")
+          }, 300)
+          return null
         } else {
-          pagination(reduxProducts.page - 1);
+          pagination(reduxProducts.page - 1)
           setTimeout(() => {
-            close();
-            updateState("clear");
-          }, 300);
+            close()
+            updateState("clear")
+          }, 300)
         }
+      } else {
+        setTimeout(() => {
+          close()
+          updateState("clear")
+        }, 300)
       }
     }
   }
@@ -75,7 +80,7 @@ function ModalExclude({
             <span
               className="close"
               onClick={() => {
-                close();
+                close()
               }}
             >
               &times;
@@ -88,8 +93,8 @@ function ModalExclude({
             {products.length > 1 ? (
               <Button
                 onClick={() => {
-                  deleteProduct({ all: true });
-                  setTimeout(() => {}, 200);
+                  deleteProduct({ all: true })
+                  setTimeout(() => {}, 200)
                 }}
               >
                 Deletar
@@ -98,7 +103,7 @@ function ModalExclude({
           </div>
         </Container>
       </div>
-    );
+    )
   }
   return (
     <div>
@@ -107,7 +112,7 @@ function ModalExclude({
           <span
             className="close"
             onClick={() => {
-              close();
+              close()
             }}
           >
             &times;
@@ -142,7 +147,7 @@ function ModalExclude({
             />
             <Button
               onClick={() => {
-                deleteProduct({ all: false });
+                deleteProduct({ all: false })
               }}
             >
               Deletar
@@ -151,25 +156,25 @@ function ModalExclude({
         </div>
       </Container>
     </div>
-  );
+  )
 }
 
 function mapStateToProps({ stateProducts }) {
   return {
     reduxProducts: stateProducts,
-  };
+  }
 }
 function mapDispachToProps(dispatch) {
   return {
     updateState(props) {
-      const action = updateState(props);
-      dispatch(action);
+      const action = updateState(props)
+      dispatch(action)
     },
     pagination(page) {
-      const action = pagination(page);
-      dispatch(action);
+      const action = pagination(page)
+      dispatch(action)
     },
-  };
+  }
 }
 
-export default Connect(mapStateToProps, mapDispachToProps)(ModalExclude);
+export default Connect(mapStateToProps, mapDispachToProps)(ModalExclude)
